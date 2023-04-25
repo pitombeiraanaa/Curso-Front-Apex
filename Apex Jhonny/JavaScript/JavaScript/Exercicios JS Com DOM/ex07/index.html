@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ex07</title>
+
+      <style>
+         .esconder {
+            display: none;
+         }
+      </style>
+   </head>
+   <body>
+      <button onclick="showHide()">Mostrar/Esconder</button>
+      <div
+         id="mostrarEsconder"
+         style="width: 200px; height: 200px; background-color: yellowgreen"
+      ></div>
+      <script>
+         function showHide() {
+            let mostrarEsconder = document.getElementById('mostrarEsconder');
+
+            // Toggle ele faz o inverso
+            // se tiver ele tira se nao tiver ele coloca
+            mostrarEsconder.classList.toggle('esconder');
+
+            /* ou poderia fazer na mao
+               let contem = mostrarEsconder.classList.contains('esconder');
+               if (contem == true) {
+                  mostrarEsconder.classList.remove('esconder');
+               } else {
+                  mostrarEsconder.classList.add('esconder');
+               }
+            */
+         }
+      </script>
+   </body>
+</html>

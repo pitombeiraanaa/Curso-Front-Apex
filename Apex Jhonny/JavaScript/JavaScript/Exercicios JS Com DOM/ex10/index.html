@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ex10</title>
+   </head>
+   <body>
+      <select id="linkVideo" onchange="trocarVideo()">
+         <option value="https://www.youtube.com/embed/r-33Hhbvr1M">
+            Guia para iniciantes sobre Node.js Streams
+         </option>
+         <option value="https://www.youtube.com/embed/i1dNnS6pXAo">
+            COMO APLICAR DARK MODE COM HTML, CSS E JAVASCRIPT
+         </option>
+         <option value="https://www.youtube.com/embed/37SwqREHRGI">
+            TUDO que você deve estudar de JavaScript antes do React
+         </option>
+         <option value="https://www.youtube.com/embed/QfcozcbDhNM">
+            Técnicas de estudo e aprendizado tradicional
+         </option>
+         <option value="https://www.youtube.com/embed/Fss8_UR8CPg">
+            REAGINDO as PROVAS BACK-END de CANDIDATOS pra DEVMEDIA
+         </option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <iframe
+         src="https://www.youtube.com/embed/r-33Hhbvr1M"
+         id="iframe"
+         frameborder="0"
+         style="width: 800px; height: 500px"
+         allowfullscreen
+      ></iframe>
+
+      <script>
+         function trocarVideo() {
+            let link = document.getElementById('linkVideo').value;
+            let iframe = document.getElementById('iframe');
+
+            iframe.setAttribute('src', link);
+         }
+      </script>
+   </body>
+</html>

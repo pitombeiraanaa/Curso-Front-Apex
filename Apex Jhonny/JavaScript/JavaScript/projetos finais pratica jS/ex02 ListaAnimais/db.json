@@ -1,0 +1,32 @@
+{
+  "animais": [
+    {
+      "nome": "Totó",
+      "tipo": "Cachorro",
+      "idade": 5,
+      "genero": "M",
+      "id": 1
+    },
+    {
+      "nome": "Belinha",
+      "tipo": "Cachorro",
+      "idade": 7,
+      "genero": "F",
+      "id": 2
+    },
+    {
+      "nome": "fred",
+      "ratipoca": "Gato",
+      "idade": 8,
+      "genero": "M",
+      "id": 3
+    },
+    {
+      "nome": "Kazerq",
+      "tipo": "Cachorro",
+      "idade": "47",
+      "genero": "M",
+      "id": 5
+    }
+  ]
+}

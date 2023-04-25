@@ -1,0 +1,26 @@
+<!-- `Crie um input aonde o usuario irá digitar uma url e ao clicar no botão deverá abrir uma janela com a url que o usuario informou`
+
+- Dica: Utilizar o window.open('url') -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 04</title>
+  </head>
+  <body>
+    <input type="text" id="input" placeholder="Digite a URL:" />
+
+    <button onclick="abrir()">Ok</button>
+
+    <script>
+      function abrir() {
+        let url = document.getElementById('input').value;
+        let urlCompleta = `https://${url}`
+        window.open(urlCompleta)
+      }
+    </script>
+  </body>
+</html>

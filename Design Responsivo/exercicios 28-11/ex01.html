@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 01</title>
+    <!-- ## Ex01
+
+   `Crie uma tela, onde se a tela tiver até 500px o fundo seja vermelho e o texto seja azul, se a tela for de 501px até 768px o fundo seja verde e a cor do texto seja rosa, e se for maior que esses valores fundo preto com texto branco`
+     --- -->
+
+    <style>
+      @media screen and (max-width: 500px) {
+        body {
+          background-color: red;
+          color: blue;
+        }
+      }
+
+      @media screen and (min-width: 501px) and (max-width: 768px) {
+        body {
+          background-color: green;
+          color: pink;
+        }
+      }
+
+      @media screen and (min-width: 769px) {
+        body {
+          background-color: black;
+          color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TEXTO AQUI</h1>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+- instalar o typescript
+npm i -g typescript
+
+- configurar typescript 
+tsc --init 
+
+- compilar o arquivo (após dar o comando vai criar um arquivo JS automaticamente)
+tsc nomeDoArquivo
+
+- configurar tsconfig.json
+"outDir": "./build" (pasta de saida)
+"rootDir": "./src"  (pasta de entrada)
+
+-para rodar o typescript
+no terminal : 

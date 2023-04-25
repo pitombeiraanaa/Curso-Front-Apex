@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 02</title>
+    <!-- ## Ex02
+
+     `Crie uma tela onde se a tela tiver até 878px o tamanho da fonte seja de 3.2rem, se a tela for maior que isso o tamanho da fonte seja de 5.2rem`
+     -- -->
+
+    <style>
+      @media screen and (max-widith: 878px) {
+        body {
+          font-size: 3.2rem;
+        }
+      }
+
+      @media screen and (min-width: 879px) {
+        body {
+          font-size: 5.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Texto Aqui</h1>
+  </body>
+</html>

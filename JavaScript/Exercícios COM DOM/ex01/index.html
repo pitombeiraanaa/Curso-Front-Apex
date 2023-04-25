@@ -1,0 +1,54 @@
+<!-- `Crie dois inputs no html, e crie um select do html aonde o usuario irá colocar numeros nos 2 inputs selecionar a operação + - * / e depois mostrar o resultado após clicar no botão calcular` -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 01</title>
+  </head>
+  <body>
+    <!-- INPUT 1 -->
+    <input type="text" id="numero1" placeholder="Numero 1" />
+
+    <!-- SELETOR DE OPERAÇÕES -->
+    <select id="operacao">
+      <option>+</option>
+      <option>-</option>
+      <option>*</option>
+      <option>/</option>
+    </select>
+
+    <!-- INPUT 2 -->
+    <input type="text" id="numero2" placeholder="Numero 2" />
+    
+    <!-- BOTÃO -->
+    <button onclick="calcular()">Calcular</button>
+    <p id="texto"></p>
+
+    <!-- OPERAÇÕES -->
+    <script>
+      function calcular() {
+        let n1 = parseFloat(document.getElementById('numero1').value)
+        let n2 = parseFloat(document.getElementById('numero2').value)
+        let operacao = document.getElementById('operacao').value
+        let texto = document.getElementById('texto')
+
+        let resultado = 0
+
+        if (operacao == '+') {
+          resultado = n1 + n2
+        } else if (operacao == '-') {
+          resultado = n1 - n2
+        } else if (operacao == '*') {
+          resultado = n1 * n2
+        } else if (operacao == '/') {
+          resultado = n1 / n2
+        }
+
+        texto.innerHTML = resultado
+      }
+    </script>
+  </body>
+</html>

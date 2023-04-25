@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ex08</title>
+   </head>
+   <body>
+      <input type="text" id="texto" onblur="trocar()" />
+      <p id="resultado"></p>
+      <script>
+         function trocar() {
+            let textoCru = document.getElementById('texto').value;
+            let textoParticionado = [];
+            textoParticionado = textoCru.split('');
+            let resultado = document.getElementById('resultado');
+
+            for (let i = 0; i < textoParticionado.length; i++) {
+               if (
+                  textoParticionado[i].toUpperCase() == 'A' ||
+                  textoParticionado[i].toUpperCase() == 'E' ||
+                  textoParticionado[i].toUpperCase() == 'I' ||
+                  textoParticionado[i].toUpperCase() == 'O' ||
+                  textoParticionado[i].toUpperCase() == 'U'
+               ) {
+                  textoParticionado[i] = '';
+               }
+            }
+            resultado.innerHTML = textoParticionado.join('');
+         }
+      </script>
+   </body>
+</html>

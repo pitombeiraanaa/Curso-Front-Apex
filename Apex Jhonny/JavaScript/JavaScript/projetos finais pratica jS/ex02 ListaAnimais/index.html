@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Animais</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <div class="container">
+
+      <form>
+         <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite o nome">
+         </div>
+         <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <select id="tipo">
+               <option value="Cachorro">Cachorro</option>
+               <option value="Gato">Gato</option>
+            </select>
+         </div>
+         <div class="form-group">
+            <label for="idade">Idade</label>
+            <input type="text" id="idade" placeholder="Digite uma idade">
+         </div>
+         <div class="form-group">
+            <label for="genero">Gênero</label>
+            <select id="genero">
+               <option value="M">Macho</option>
+               <option value="F">Fêmea</option>
+            </select>
+         </div>
+
+         <button onclick="adicionarAnimal(event)">Adicionar</button>
+
+      </form>
+
+      <h2>Lista de Animais</h2>
+
+      <ul id="lista"></ul>
+
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>

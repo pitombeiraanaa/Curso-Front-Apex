@@ -1,0 +1,37 @@
+<!-- `Faça um programa que capture o evento de um input na sua tela e mostre automaticamente a tabuada desse número abaixo.` -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 2</title>
+  </head>
+  <body>
+    <!-- INPUT -->
+    <input
+      type="text"
+      id="numero"
+      placeholder="Tabuada do número:"
+      onkeyup="tabuada()"
+    />
+    <p id="texto"></p>
+
+    <!-- OPERAÇÃO -->
+    <script>
+      function tabuada() {
+        let numero = parseFloat(document.getElementById('numero').value)
+
+        let texto = document.getElementById('texto')
+
+        let tabuada = ''
+
+        for (let i = 1; i <= 10; i++) {
+          tabuada += `${numero} X ${i} = ${numero * i} <br>`
+        }
+        texto.innerHTML = tabuada
+      }
+    </script>
+  </body>
+</html>

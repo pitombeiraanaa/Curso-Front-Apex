@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ex06</title>
+   </head>
+   <body>
+      <select id="cor" onchange="trocarCor()">
+         <option value="red">Vermelho</option>
+         <option value="blue">Azul</option>
+         <option value="green">Verde</option>
+      </select>
+      <div
+         id="alvo"
+         style="background-color: black; width: 200px; height: 200px"
+      ></div>
+      <script>
+         function trocarCor() {
+            let cor = document.getElementById('cor').value;
+            let alvo = document.getElementById('alvo');
+
+            alvo.style.backgroundColor = cor;
+         }
+      </script>
+   </body>
+</html>

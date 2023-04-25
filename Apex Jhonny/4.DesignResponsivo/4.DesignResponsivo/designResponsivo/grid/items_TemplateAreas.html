@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #7159c1;
+      }
+
+      .container {
+        display: grid;
+
+        /* Cria as colunas */
+        grid-template-columns: 3fr 1fr;
+
+        /* Cria as linhas  header tem 20vh main e aside tem 70vh footer tem 10vh fechando 100vh  */
+        grid-template-rows: 20vh 70vh 10vh;
+
+        /* Adiciona espaço entre os itens */
+        /* grid-gap: 20px; */
+
+        /* Monta o template como queremos que apareca */
+        grid-template-areas:
+          "topo ."
+          "principal canto"
+          ". rodape";
+      }
+
+      header {
+        background: yellow;
+        height: 100%;
+
+        /* Nome do item para o template areas */
+        grid-area: topo;
+      }
+
+      main {
+        background: blue;
+        height: 100%;
+
+        grid-area: principal;
+      }
+
+      aside {
+        background: green;
+        height: 100%;
+
+        grid-area: canto;
+      }
+
+      footer {
+        background: red;
+        height: 100%;
+
+        grid-area: rodape;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <main></main>
+      <aside></aside>
+      <footer></footer>
+    </div>
+  </body>
+</html>
